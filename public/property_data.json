@@ -1,0 +1,83 @@
+
+[
+  {
+    "id": 1,
+    "estate_title": "Modern Family Home",
+    "segment_name": "Single-family Home",
+    "description": "A spacious 4-bedroom family home located in a quiet suburban neighborhood, perfect for families looking for comfort and peace.",
+    "price": "$500,000",
+    "status": "sale",
+    "area": "2500 sq ft",
+    "location": "123 Maple Street, Springfield",
+    "facilities": ["living room", "swimming pool", "kitchen"],
+    "image": "https://i.ibb.co.com/KpyWhmVt/premium-photo-1734543932204-8574dbfa7c40-q-80-w-20.jpg",
+    "view_property": "View Property"
+  },
+  {
+    "id": 2,
+    "estate_title": "Luxury Apartment",
+    "segment_name": "Apartment",
+    "description": "A stunning 3-bedroom apartment in the heart of the city with beautiful skyline views and modern amenities.",
+    "price": "$750,000",
+    "status": "new",
+    "area": "1800 sq ft",
+    "location": "789 City Center Blvd, Metropolis",
+    "facilities": ["living room", "gym", "kitchen"],
+    "image": "https://i.ibb.co.com/C3tmDyr3/premium-photo-1734543932204-8574dbfa7c40-q-80-w-20-1.jpg",
+    "view_property": "View Property"
+  },
+  {
+    "id": 3,
+    "estate_title": "Cozy Student Housing",
+    "segment_name": "Student Housing",
+    "description": "Affordable and convenient 2-bedroom student housing located close to the university with easy access to public transportation.",
+    "price": "$1,200/month",
+    "status": "rent",
+    "area": "900 sq ft",
+    "location": "456 University Lane, College Town",
+    "facilities": ["study room", "laundry", "kitchen"],
+    "image": "https://i.ibb.co.com/twkdjZz2/premium-photo-1734543932204-8574dbfa7c40-q-80-w-20.png",
+    "view_property": "View Property"
+  },
+  {
+    "id": 4,
+    "estate_title": "Senior Living Community Home",
+    "segment_name": "Senior Living",
+    "description": "A comfortable and safe home in a senior living community, offering assisted living services and a friendly environment.",
+    "price": "$3,500/month",
+    "status": "new",
+    "area": "1500 sq ft",
+    "location": "321 Serenity Drive, Palm Springs",
+    "facilities": ["living room", "garden", "kitchen"],
+    "image": "https://i.ibb.co.com/9HJNB21V/photo-1513584684374-8bab748fbf90-q-80-w-2065-auto.jpg",
+    "view_property": "View Property"
+  },
+  {
+    "id": 5,
+    "estate_title": "Beachside Vacation Home",
+    "segment_name": "Vacation Rental",
+    "description": "A beautiful 2-bedroom beachfront home, perfect for a peaceful getaway with stunning ocean views and direct beach access.",
+    "price": "$2,500/week",
+    "status": "rent",
+    "area": "1600 sq ft",
+    "location": "987 Ocean Drive, Laguna Beach",
+    "facilities": ["living room", "beach access", "kitchen"],
+    "image": "https://i.ibb.co.com/hJQY77NQ/premium-photo-1734543932204-8574dbfa7c40-q-80-w-20-2.png",
+    "view_property": "View Property"
+  },
+  {
+    "id": 6,
+    "estate_title": "Spacious Townhouse",
+    "segment_name": "Townhouse",
+    "description": "A modern 3-bedroom townhouse located in a prime urban area, featuring a private rooftop garden and garage space.",
+    "price": "$600,000",
+    "status": "sale",
+    "area": "2000 sq ft",
+    "location": "654 Urban Street, Downtown",
+    "facilities": ["living room", "rooftop garden", "kitchen"],
+    "image": "https://i.ibb.co.com/35YDnK0Z/premium-photo-1734543932204-8574dbfa7c40-q-80-w-20-2.jpg",
+    "view_property": "View Property"
+  }
+]
+
+  
