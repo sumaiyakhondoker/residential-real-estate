@@ -1,4 +1,3 @@
-// import bgImg from '../../assets/loginBackground.svg'
 
 import { Link } from "react-router-dom";
 import SocialLogin from "./SocialLogin";

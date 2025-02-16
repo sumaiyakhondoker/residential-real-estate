@@ -1,21 +1,23 @@
-
+import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const user = false
     const navlinks = <>
     <li><NavLink to='/'>Home</NavLink></li>
+    <li><NavLink to='/propertyCardDetails/:id'>Property</NavLink></li>
     <li><NavLink to=''>Update Profile</NavLink></li>
 
     {/* conditional ,if the user logged in */}
     <li><NavLink to=''>User Profile</NavLink></li>
       
-      
+    
     
     </>
     return (
-        <div className="navbar bg-base-100 shadow-sm ">
-  <div className="navbar-start">
+        <div className=" bg-base-100 shadow-sm ">
+          <div className="max-w-7xl mx-auto navbar">
+          <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
@@ -26,7 +28,7 @@ const Navbar = () => {
         {navlinks}
       </ul>
     </div>
-    <Link to='/' className="btn btn-ghost text-xl">GrandVista Homes</Link>
+    <Link to='/' className="btn btn-ghost text-2xl text-accent font-semibold"><HiOutlineBuildingOffice2></HiOutlineBuildingOffice2><span className="font-extrabold">GrandVista</span> Homes</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -63,6 +65,8 @@ const Navbar = () => {
     
     }
   </div>
+          </div>
+  
 </div>
     );
 };

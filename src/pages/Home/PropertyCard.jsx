@@ -1,7 +1,8 @@
 import { CiLocationOn } from "react-icons/ci";
-import { useNavigate } from "react-router-dom";
+import { Link} from "react-router-dom";
+import PropTypes from 'prop-types'; 
 const PropertyCard = ({data}) => {
-    const navigate= useNavigate()
+    
     const {id,
         estate_title,
         segment_name,
@@ -12,11 +13,8 @@ const PropertyCard = ({data}) => {
         location,
         facilities,
         image} = data
-    console.log(data);
 
-    const handleViewProperty = () =>{
-        navigate('/propertyCardDetails')
-    }
+    
     return (
         <div className="card bg-base-100 shadow-sm text-left">
   <figure>
@@ -35,7 +33,7 @@ const PropertyCard = ({data}) => {
     <h3 className="text-2xl font-semibold text-accent">{price}</h3>
     <p>{area}</p>
     <div className="card-actions justify-end">
-      <button onClick={handleViewProperty} className="btn bg-accent text-white">View Property</button>
+    <Link to={`/propertyCardDetails/${id}`}><button className="btn bg-accent text-white">View Property</button></Link>
       
     </div>
   </div>
@@ -44,3 +42,7 @@ const PropertyCard = ({data}) => {
 };
 
 export default PropertyCard;
+
+PropertyCard.propTypes = {
+  data: PropTypes.node,
+}
