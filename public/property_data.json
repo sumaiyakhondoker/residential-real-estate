@@ -1,10 +1,15 @@
 
+
+
+
+
+
 [
   {
     "id": 1,
     "estate_title": "Modern Family Home",
     "segment_name": "Single-family Home",
-    "description": "A spacious 4-bedroom family home located in a quiet suburban neighborhood, perfect for families looking for comfort and peace.",
+    "description": "This beautifully designed modern family home is situated in a quiet and serene suburban neighborhood. With 4 spacious bedrooms and 3 bathrooms, this home offers plenty of space for a growing family. The open-plan living and dining area boasts natural light and modern finishes, creating a comfortable and welcoming environment for family gatherings. The kitchen is fully equipped with state-of-the-art appliances, and the backyard features a private swimming pool, perfect for relaxing on hot summer days. Additional amenities include a two-car garage, a home office, and a large garden area. This beautifully designed modern family home is situated in a quiet and serene suburban neighborhood. With 4 spacious bedrooms and 3 bathrooms, this home offers plenty of space for a growing family. The open-plan living and dining area boasts natural light and modern finishes, creating a comfortable and welcoming environment for family gatherings. The kitchen is fully equipped with state-of-the-art appliances, and the backyard features a private swimming pool, perfect for relaxing on hot summer days. Additional amenities include a two-car garage, a home office, and a large garden area. Located close to schools, parks, and shopping centers, this home provides both luxury and convenience.",
     "price": "$500,000",
     "status": "sale",
     "area": "2500 sq ft",
@@ -17,7 +22,7 @@
     "id": 2,
     "estate_title": "Luxury Apartment",
     "segment_name": "Apartment",
-    "description": "A stunning 3-bedroom apartment in the heart of the city with beautiful skyline views and modern amenities.",
+    "description": "Located in the heart of the bustling city, this stunning 3-bedroom luxury apartment offers breathtaking skyline views and all the modern amenities you could ask for. The apartment features floor-to-ceiling windows, flooding the space with natural light and providing panoramic views of the city. The spacious master bedroom comes with a walk-in closet and an en-suite bathroom, while the other two bedrooms are generously sized and share a modern bathroom. The open-concept living area connects to a sleek, fully equipped kitchen with high-end appliances. Residents of the building can enjoy exclusive access to the on-site gym, spa, and rooftop terrace. Located in the heart of the bustling city, this stunning 3-bedroom luxury apartment offers breathtaking skyline views and all the modern amenities you could ask for. The apartment features floor-to-ceiling windows, flooding the space with natural light and providing panoramic views of the city. The spacious master bedroom comes with a walk-in closet and an en-suite bathroom, while the other two bedrooms are generously sized and share a modern bathroom. The open-concept living area connects to a sleek, fully equipped kitchen with high-end appliances. Residents of the building can enjoy exclusive access to the on-site gym, spa, and rooftop terrace. This apartment is perfect for those seeking a sophisticated urban lifestyle.",
     "price": "$750,000",
     "status": "new",
     "area": "1800 sq ft",
@@ -30,7 +35,7 @@
     "id": 3,
     "estate_title": "Cozy Student Housing",
     "segment_name": "Student Housing",
-    "description": "Affordable and convenient 2-bedroom student housing located close to the university with easy access to public transportation.",
+    "description": "This cozy 2-bedroom student housing is designed for the ultimate convenience and affordability for students. Located just a short walk from the university campus, the apartment offers easy access to public transportation, restaurants, and shopping. The two bedrooms come fully furnished with study desks, closets, and comfortable beds, making it an ideal space for students. A shared living room provides a great space for relaxation, while the fully equipped kitchen makes meal preparation easy. On-site laundry facilities and a study room ensure a comfortable and productive living environment for students. The affordable monthly rent makes this an excellent choice for budget-conscious students. This cozy 2-bedroom student housing is designed for the ultimate convenience and affordability for students. Located just a short walk from the university campus, the apartment offers easy access to public transportation, restaurants, and shopping. The two bedrooms come fully furnished with study desks, closets, and comfortable beds, making it an ideal space for students. A shared living room provides a great space for relaxation, while the fully equipped kitchen makes meal preparation easy. On-site laundry facilities and a study room ensure a comfortable and productive living environment for students. The affordable monthly rent makes this an excellent choice for budget-conscious students.",
     "price": "$1,200/month",
     "status": "rent",
     "area": "900 sq ft",
@@ -43,9 +48,9 @@
     "id": 4,
     "estate_title": "Senior Living Community Home",
     "segment_name": "Senior Living",
-    "description": "A comfortable and safe home in a senior living community, offering assisted living services and a friendly environment.",
+    "description": "This senior living community home is designed for comfort, safety, and ease of living. Located in a peaceful community, the home offers assisted living services, ensuring that residents receive the care they need while maintaining their independence. The home features a spacious living area, a modern kitchen, and a private garden where residents can enjoy outdoor activities. With its 2 bedrooms and 2 bathrooms, the home is perfect for seniors seeking a tranquil living space. Residents also have access to community amenities such as a clubhouse, fitness center, and beautifully landscaped gardens. This senior living community provides a friendly, welcoming environment that promotes social interaction and an active lifestyle.This senior living community home is designed for comfort, safety, and ease of living. Located in a peaceful community, the home offers assisted living services, ensuring that residents receive the care they need while maintaining their independence. The home features a spacious living area, a modern kitchen, and a private garden where residents can enjoy outdoor activities. With its 2 bedrooms and 2 bathrooms, the home is perfect for seniors seeking a tranquil living space. Residents also have access to community amenities such as a clubhouse, fitness center, and beautifully landscaped gardens. This senior living community provides a friendly, welcoming environment that promotes social interaction and an active lifestyle.",
     "price": "$3,500/month",
-    "status": "new",
+    "status": "rent",
     "area": "1500 sq ft",
     "location": "321 Serenity Drive, Palm Springs",
     "facilities": ["living room", "garden", "kitchen"],
@@ -56,9 +61,9 @@
     "id": 5,
     "estate_title": "Beachside Vacation Home",
     "segment_name": "Vacation Rental",
-    "description": "A beautiful 2-bedroom beachfront home, perfect for a peaceful getaway with stunning ocean views and direct beach access.",
+    "description": "Escape to this beautiful 2-bedroom beachfront vacation home, perfect for a peaceful getaway. This property offers stunning ocean views from the large windows and private deck, where you can relax and take in the sound of the waves. The home features an open-concept living room with a modern kitchen, fully equipped for your cooking needs. Both bedrooms are spacious and include comfortable beds, perfect for unwinding after a day on the beach. With direct beach access, this home is ideal for those looking to enjoy a relaxing vacation by the water. Additional amenities include a barbecue area, outdoor shower, and high-speed Wi-Fi. Whether you're looking to surf, swim, or simply relax, this vacation home has everything you need. Escape to this beautiful 2-bedroom beachfront vacation home, perfect for a peaceful getaway. This property offers stunning ocean views from the large windows and private deck, where you can relax and take in the sound of the waves. The home features an open-concept living room with a modern kitchen, fully equipped for your cooking needs. Both bedrooms are spacious and include comfortable beds, perfect for unwinding after a day on the beach. With direct beach access, this home is ideal for those looking to enjoy a relaxing vacation by the water. Additional amenities include a barbecue area, outdoor shower, and high-speed Wi-Fi. Whether you're looking to surf, swim, or simply relax, this vacation home has everything you need.",
     "price": "$2,500/week",
-    "status": "rent",
+    "status": "sale",
     "area": "1600 sq ft",
     "location": "987 Ocean Drive, Laguna Beach",
     "facilities": ["living room", "beach access", "kitchen"],
@@ -69,9 +74,9 @@
     "id": 6,
     "estate_title": "Spacious Townhouse",
     "segment_name": "Townhouse",
-    "description": "A modern 3-bedroom townhouse located in a prime urban area, featuring a private rooftop garden and garage space.",
+    "description": "This spacious 3-bedroom townhouse offers modern living in a vibrant urban setting. Spread over three floors, this home features a private rooftop garden, perfect for entertaining guests or enjoying a quiet evening outdoors. The open-plan living and dining area offers plenty of space for relaxation, while the kitchen is fully equipped with high-end appliances. The master bedroom includes a walk-in closet and en-suite bathroom, while the other two bedrooms share a modern family bathroom. A private garage provides parking for two vehicles, and the property is within walking distance of shops, restaurants, and public transportation. This townhouse is ideal for those looking for the convenience of city living without compromising on space. This spacious 3-bedroom townhouse offers modern living in a vibrant urban setting. Spread over three floors, this home features a private rooftop garden, perfect for entertaining guests or enjoying a quiet evening outdoors. The open-plan living and dining area offers plenty of space for relaxation, while the kitchen is fully equipped with high-end appliances. The master bedroom includes a walk-in closet and en-suite bathroom, while the other two bedrooms share a modern family bathroom. A private garage provides parking for two vehicles, and the property is within walking distance of shops, restaurants, and public transportation. This townhouse is ideal for those looking for the convenience of city living without compromising on space.",
     "price": "$600,000",
-    "status": "sale",
+    "status": "new",
     "area": "2000 sq ft",
     "location": "654 Urban Street, Downtown",
     "facilities": ["living room", "rooftop garden", "kitchen"],
@@ -79,5 +84,6 @@
     "view_property": "View Property"
   }
 ]
+
 
   
