@@ -1,10 +1,16 @@
 
 import { Link } from "react-router-dom";
 import SocialLogin from "./SocialLogin";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Login = () => {
   return (
-    <div className="bg-[url('/loginBackground.svg')] bg-cover min-h-screen bg-no-repeat">
+    <HelmetProvider>
+
+      <Helmet>
+        <title>Login | GrandVista Homes</title>
+      </Helmet>
+      <div className="bg-[url('/loginBackground.svg')] bg-cover min-h-screen bg-no-repeat">
       <div className="hero min-h-screen">
         <div className="hero-content flex-col ">
           
@@ -35,6 +41,7 @@ const Login = () => {
         </div>
       </div>
     </div>
+    </HelmetProvider>
   );
 };
 

@@ -1,10 +1,11 @@
 import PopularListings from "./PopularListings";
 import Slider from "./Slider";
-import {Helmet} from "react-helmet-async";
+import {Helmet, HelmetProvider} from "react-helmet-async";
 
 const Home = () => {
   return (
-    <div className="relative">
+    <HelmetProvider>
+      <div className="relative">
       <Helmet>
         <title>Home | GrandVista Homes</title>
       </Helmet>
@@ -30,7 +31,8 @@ const Home = () => {
       </div>
 
       <PopularListings></PopularListings>
-    </div> 
+    </div>
+    </HelmetProvider> 
   );
 };
 

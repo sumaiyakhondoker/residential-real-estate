@@ -5,13 +5,10 @@ const PropertyCard = ({data}) => {
     
     const {id,
         estate_title,
-        segment_name,
-        description,
         price,
         status,
         area,
         location,
-        facilities,
         image} = data
 
     
@@ -44,5 +41,5 @@ const PropertyCard = ({data}) => {
 export default PropertyCard;
 
 PropertyCard.propTypes = {
-  data: PropTypes.node,
+  data: PropTypes.object,
 }

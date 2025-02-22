@@ -3,6 +3,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { IoHomeOutline } from "react-icons/io5";
 import { CiLocationOn } from "react-icons/ci";
 import { RiHeartAdd2Line } from "react-icons/ri";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const PropertyCardDetails = () => {
   const { id } = useParams();
@@ -10,7 +11,7 @@ const PropertyCardDetails = () => {
   const idInt = parseInt(id);
 
   const propertyData = allDatas.find((data) => data.id === idInt);
-  console.log(idInt, propertyData);
+  // console.log(idInt, propertyData);
 
   const {
     estate_title,
@@ -24,7 +25,12 @@ const PropertyCardDetails = () => {
   } = propertyData;
 
   return (
-    <div>
+    <HelmetProvider>
+
+      <Helmet>
+        <title>Property Details: {id}</title>
+      </Helmet>
+      <div>
       {/* upper part */}
       <div className="bg-[url('/pro.PNG')] bg-cover min-h-64 bg-no-repeat text-white">
         <div className="pt-20">
@@ -95,13 +101,14 @@ const PropertyCardDetails = () => {
           <div>
             <h4 className="text-xl font-bold">Facilities</h4>
             {
-            facilities.map(facility => <li key={id}>{facility}</li>)
+            facilities.map(facility => <li>{facility}</li>)
           }
           </div>
           
         </div>
       </div>
     </div>
+    </HelmetProvider>
   );
 };
 
