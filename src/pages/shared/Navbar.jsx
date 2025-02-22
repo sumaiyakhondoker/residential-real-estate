@@ -60,7 +60,10 @@ const Navbar = () => {
       <Link to='' className="btn">Logout</Link>
     </div> 
     :
-    <Link to='/login' className="btn">Login</Link>
+    <>
+    <Link to='/register' className="btn btn-outline btn-accent mr-3 outline-accent  hover:text-white">Create Account</Link>
+    <Link to='/login' className="btn btn-outline btn-accent  outline-accent  hover:text-white">Login</Link>
+    </>
     
     
     }
