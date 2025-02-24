@@ -2,7 +2,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useForm} from "react-hook-form"
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import { toast } from 'react-toastify';
+import toast from "react-hot-toast";
 
 const Register = () => {
   const navigate = useNavigate()
@@ -30,11 +30,12 @@ const Register = () => {
   
       })
       .catch(error =>{
-        toast.error(error.message);
+         
+        toast.error(error.message.slice(9,43));
       })
     }
     else{
-      toast.warning('Password must have an uppercase letter, a lowercase letter, and length must be at least 6 character!');
+      toast('Password must have an uppercase letter, a lowercase letter, and length must be at least 6 character!');
     }
 
 
@@ -60,26 +61,27 @@ const Register = () => {
           
             <form onSubmit={handleSubmit(onSubmit)} className="card-body">
               <fieldset className="fieldset">
-              <h1 className="text-3xl font-bold text-white text-center">Register</h1>
+              <h1 className="text-3xl font-bold text-blue-900 text-center">Register</h1>
 
                 <label className="fieldset-label text-white">Full Name</label>
-                <input  type="text" className="input" placeholder="Full Name"  {...register("fullName", { required: true })}/>
+                <input  type="text" className="input w-full" placeholder="Full Name"  {...register("fullName", { required: true })}/>
 
                 {errors.fullName && <span className="text-red-500">This field is required</span>}
 
                 <label className="fieldset-label text-white">Email</label>
-                <input type="email" className="input" placeholder="Email" {...register("email", { required: true })}/>
+                <input type="email" className="input w-full" placeholder="Email" {...register("email", { required: true })}/>
                 {errors.email && <span className="text-red-500">This field is required</span>}
 
                 
                 <label className="fieldset-label text-white">Photo URL</label>
-                <input type="text" className="input" placeholder="Photo URL" {...register("image")}/>
+                <input type="text" className="input w-full" placeholder="Photo URL" {...register("image")}/>
 
                 <label className="fieldset-label text-white">Password</label>
                 <input
                   type="password"
-                  className="input"
+                  className="input w-full"
                   placeholder="Password"
+                  
                   {...register("password", { required: true })}
                 />
 

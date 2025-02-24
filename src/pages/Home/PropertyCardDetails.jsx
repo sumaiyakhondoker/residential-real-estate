@@ -4,6 +4,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { CiLocationOn } from "react-icons/ci";
 import { RiHeartAdd2Line } from "react-icons/ri";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import toast from "react-hot-toast";
 
 const PropertyCardDetails = () => {
   const { id } = useParams();
@@ -83,7 +84,7 @@ const PropertyCardDetails = () => {
             <p>{area}</p>
           </div>
           <div className="text-center my-auto flex justify-center items-center gap-5">
-            <button onClick={()=> alert('Added to wishlist')} className="btn btn-accent text-white text-xl px-2.5"><RiHeartAdd2Line></RiHeartAdd2Line></button>
+            <button onClick={()=> toast.success('Added to wishlist')} className="btn btn-accent text-white text-xl px-2.5"><RiHeartAdd2Line></RiHeartAdd2Line></button>
             <h3 className="text-2xl font-semibold ">{price}</h3>
           </div>
         </div>

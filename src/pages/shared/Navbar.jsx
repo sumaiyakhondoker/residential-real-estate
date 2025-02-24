@@ -1,19 +1,34 @@
 import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { Link, NavLink } from 'react-router-dom';
+import useAuth from "../../hooks/useAuth";
+import userImg from '/user.png'
 
 const Navbar = () => {
-  const user = false
+  const {user, logOut} = useAuth()
+  console.log(user);
+
     const navlinks = <>
     <li><NavLink to='/'>Home</NavLink></li>
-    <li><NavLink to='/propertyCardDetails/:id'>Property</NavLink></li>
+    <li><NavLink to='/properties'>Properties</NavLink></li>
     <li><NavLink to='/updateProfile'>Update Profile</NavLink></li>
-
+    <li><NavLink to='/contact'>Contact Us</NavLink></li>
+    
     {/* conditional ,if the user logged in */}
     <li><NavLink to='/userProfile'>User Profile</NavLink></li>
       
     
     
     </>
+
+    const handleLogout = () =>{
+      logOut()
+      .then(()=>{
+        console.log('user logged out');
+      })
+      .catch(error =>{
+        console.log(error);
+      })
+    }
     return (
         <div className=" bg-base-100 shadow-sm ">
           <div className="max-w-7xl mx-auto navbar">
@@ -42,7 +57,7 @@ const Navbar = () => {
         <div className="w-10 rounded-full">
           <img
             alt="User Image"
-            src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+            src={`${user.photoURL || userImg}`} />
         </div>
       </div>
       <ul
@@ -55,9 +70,9 @@ const Navbar = () => {
           </a>
         </li>
         <li><a>Settings</a></li>
-        <li><a>Logout</a></li>
+        
       </ul>
-      <Link to='' className="btn">Logout</Link>
+      <button onClick={handleLogout} className="btn ml-3">Logout</button>
     </div> 
     :
     <>
