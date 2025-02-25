@@ -71,11 +71,11 @@ const Login = () => {
                   <button className="btn btn-neutral mt-4">Login</button>
                 </fieldset>
               </form>
-              <div className="divider divider-info text-white px-5">
+              <div className="divider divider-info text-sky-300 px-5">
                 <span className="  ">Continue with</span>
               </div>
               <SocialLogin></SocialLogin>
-              <p className="text-white text-center pb-5">
+              <p className="text-sky-300  text-center pb-5">
                 Need An Account?{" "}
                 <Link to="/register" className="link">
                   REGISTER

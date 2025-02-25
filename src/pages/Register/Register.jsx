@@ -3,10 +3,13 @@ import { useForm} from "react-hook-form"
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
+import { useState } from "react";
 
 const Register = () => {
   const navigate = useNavigate()
   const {registerUser} = useAuth()
+  const [showPassword, setShowPassword] = useState(false)
     
 
   const {
@@ -38,13 +41,6 @@ const Register = () => {
       toast('Password must have an uppercase letter, a lowercase letter, and length must be at least 6 character!');
     }
 
-
-
-
-
-
-    
-    
     
   }
     return (
@@ -77,13 +73,18 @@ const Register = () => {
                 <input type="text" className="input w-full" placeholder="Photo URL" {...register("image")}/>
 
                 <label className="fieldset-label text-white">Password</label>
+                <div className="relative">
                 <input
-                  type="password"
+                  type={showPassword ? 'text' : 'password'}
                   className="input w-full"
                   placeholder="Password"
                   
                   {...register("password", { required: true })}
+                  
                 />
+                <span className="absolute top-2 md:top-3 text-lg right-2 cursor-pointer" onClick={()=> setShowPassword(!showPassword)}>{showPassword ? <FaRegEyeSlash></FaRegEyeSlash> : <FaRegEye ></FaRegEye> }</span>
+                
+                </div>
 
                 {errors.password && <span className="text-red-500">This field is required</span>}
 
@@ -93,7 +94,7 @@ const Register = () => {
             </form>
             
             
-            <p className="text-white text-center pb-5"> Already A User? <Link to='/login' className="link" >LOGIN</Link></p>
+            <p className="text-sky-300 text-center pb-5"> Already A User? <Link to='/login' className="link" >LOGIN</Link></p>
           </div>
         </div>
       </div>
