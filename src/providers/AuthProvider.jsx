@@ -28,13 +28,16 @@ const AuthProvider = ({children}) => {
     }
 
     const googleLogin = () =>{
+        setLoading(true)
         return signInWithPopup(auth, googleProvider)
     }
 
     const facebookLogin = () =>{
+        setLoading(true)
         return signInWithPopup(auth, facebookProvider)
     }
     const githubLogin = () =>{
+        setLoading(true)
         return signInWithPopup(auth, githubProvider)
     }
     const logOut = () =>{

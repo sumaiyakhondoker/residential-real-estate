@@ -39,10 +39,10 @@ const PropertyCardDetails = () => {
             Properties
           </h3>
           <p className=" flex justify-center items-center space-x-1.5 pt-3">
-            <IoHomeOutline></IoHomeOutline>{" "}
-            <Link to="/" className="hover:link">
+          <span className="flex justify-center items-center hover:text-accent"><IoHomeOutline className="mr-1"></IoHomeOutline>{" "}
+            <Link to="/" className="hover:link ">
               Home
-            </Link>{" "}
+            </Link>{" "}</span>
             <MdKeyboardArrowRight></MdKeyboardArrowRight> Standard Detail
           </p>
         </div>

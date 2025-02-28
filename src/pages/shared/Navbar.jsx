@@ -8,13 +8,15 @@ const Navbar = () => {
   console.log(user);
 
     const navlinks = <>
-    <li><NavLink to='/'>Home</NavLink></li>
-    <li><NavLink to='/properties'>Properties</NavLink></li>
-    <li><NavLink to='/updateProfile'>Update Profile</NavLink></li>
-    <li><NavLink to='/contact'>Contact Us</NavLink></li>
+    <li><NavLink to='/' className={({isActive})=> isActive ? 'bg-accent text-white': ''}>Home</NavLink></li>
+    <li><NavLink to='/properties' className={({isActive})=> isActive ? 'bg-accent text-white': ''}>Properties</NavLink></li>
+    <li><NavLink to='/updateProfile' className={({isActive})=> isActive ? 'bg-accent text-white': ''}>Update Profile</NavLink></li>
+    <li><NavLink to='/contact' className={({isActive})=> isActive ? 'bg-accent text-white' : ''}>Contact Us</NavLink></li>
     
     {/* conditional ,if the user logged in */}
-    <li><NavLink to='/userProfile'>User Profile</NavLink></li>
+    {/* {
+      user && <li><NavLink to='/userProfile' className={({isActive})=> isActive ? 'bg-accent text-white': ''}>User Profile</NavLink></li>
+    } */}
       
     
     
@@ -53,14 +55,8 @@ const Navbar = () => {
   <div className="navbar-end">
     
     {user ? <div className="dropdown dropdown-end">
-      <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
-          <img
-            alt="User Image"
-            src={`${user.photoURL || userImg}`} />
-        </div>
-      </div>
-      <ul
+      
+      {/* <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li>
@@ -71,7 +67,19 @@ const Navbar = () => {
         </li>
         <li><a>Settings</a></li>
         
-      </ul>
+      </ul> */}
+
+<div className="tooltip tooltip-bottom" data-tip={user.displayName || user.email || 'User'}>
+<div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+        <div className="w-10 rounded-full">
+          <img
+            alt="User Image"
+            src={`${user.photoURL || userImg}`} />
+        </div>
+      </div>
+</div>
+
+
       <button onClick={handleLogout} className="btn ml-3">Logout</button>
     </div> 
     :

@@ -59,20 +59,20 @@ const Register = () => {
               <fieldset className="fieldset">
               <h1 className="text-3xl font-bold text-blue-900 text-center">Register</h1>
 
-                <label className="fieldset-label text-white">Full Name</label>
+                <label className="fieldset-label text-blue-900 lg:text-white">Full Name</label>
                 <input  type="text" className="input w-full" placeholder="Full Name"  {...register("fullName", { required: true })}/>
 
                 {errors.fullName && <span className="text-red-500">This field is required</span>}
 
-                <label className="fieldset-label text-white">Email</label>
+                <label className="fieldset-label text-blue-900 lg:text-white">Email</label>
                 <input type="email" className="input w-full" placeholder="Email" {...register("email", { required: true })}/>
                 {errors.email && <span className="text-red-500">This field is required</span>}
 
                 
-                <label className="fieldset-label text-white">Photo URL</label>
+                <label className="fieldset-label text-blue-900 lg:text-white">Photo URL</label>
                 <input type="text" className="input w-full" placeholder="Photo URL" {...register("image")}/>
 
-                <label className="fieldset-label text-white">Password</label>
+                <label className="fieldset-label text-blue-900 lg:text-white">Password</label>
                 <div className="relative">
                 <input
                   type={showPassword ? 'text' : 'password'}

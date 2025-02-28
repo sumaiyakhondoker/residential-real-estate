@@ -8,6 +8,8 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Properties from "../pages/Properties/Properties";
 import Contact from "../pages/Contact/Contact";
 import PropertyCardDetails from "../pages/Home/PropertyCardDetails";
+import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
+import Map from "../pages/Contact/Map";
 
 export const router = createBrowserRouter([
     {
@@ -29,6 +31,10 @@ export const router = createBrowserRouter([
         path: '/properties',
         element: <PrivateRoute><Properties></Properties></PrivateRoute>,
         loader: ()=> fetch('/property_data.json')
+      },
+      {
+        path: '/updateProfile',
+        element: <UpdateProfile></UpdateProfile>
       },
       {
         path: '/contact',

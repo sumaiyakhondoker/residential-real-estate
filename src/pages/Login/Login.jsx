@@ -45,7 +45,7 @@ const Login = () => {
                     Login
                   </h1>
 
-                  <label className="fieldset-label text-white">Email</label>
+                  <label className="fieldset-label text-blue-900 lg:text-white">Email</label>
                   <input
                     type="email"
                     className="input w-full"
@@ -54,7 +54,7 @@ const Login = () => {
                   />
                   {errors.email && <span className="text-red-500">This field is required</span>}
 
-                  <label className="fieldset-label text-white">Password</label>
+                  <label className="fieldset-label text-blue-900 lg:text-white">Password</label>
                   <input
                     type="password"
                     className="input w-full"
@@ -64,7 +64,7 @@ const Login = () => {
 
                   {errors.password && <span className="text-red-500">This field is required</span>}
                   <div>
-                    <a className="link link-hover text-white">
+                    <a className="link link-hover text-blue-900 lg:text-white">
                       Forgot password?
                     </a>
                   </div>
