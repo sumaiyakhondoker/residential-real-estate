@@ -10,13 +10,12 @@ const Navbar = () => {
     const navlinks = <>
     <li><NavLink to='/' className={({isActive})=> isActive ? 'bg-accent text-white': ''}>Home</NavLink></li>
     <li><NavLink to='/properties' className={({isActive})=> isActive ? 'bg-accent text-white': ''}>Properties</NavLink></li>
-    <li><NavLink to='/updateProfile' className={({isActive})=> isActive ? 'bg-accent text-white': ''}>Update Profile</NavLink></li>
+    
     <li><NavLink to='/contact' className={({isActive})=> isActive ? 'bg-accent text-white' : ''}>Contact Us</NavLink></li>
     
-    {/* conditional ,if the user logged in */}
-    {/* {
-      user && <li><NavLink to='/userProfile' className={({isActive})=> isActive ? 'bg-accent text-white': ''}>User Profile</NavLink></li>
-    } */}
+    {
+      user && <li><NavLink to='/updateProfile' className={({isActive})=> isActive ? 'bg-accent text-white': ''}>Update Profile</NavLink></li>
+    }
       
     
     
