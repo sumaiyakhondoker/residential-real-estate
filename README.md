@@ -1,8 +1,31 @@
-# React + Vite
+# GrandVista Homes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Livesite URL:
+- [GrandVista Homes](https://residential-real-estate-4967f.web.app/)
 
-Currently, two official plugins are available:
+Features and characteristics of my website:
+Popular Apartment:
+- Modern Family Home
+- Luxury Apartment
+- Cozy Student Housing
+- Senior Living Community Home
+- Beachside Vacation Home
+- Spacious Townhouse
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Common Features:
+- Living Room
+- Swimming Pool
+- Modern Kitchen
+- Garage
+- Garden
+- Gym
+- Rooftop Terrace
+- Study Room
+- High-Speed Internet
+
+
+npm package name which I have used for the
+challenges task: 
+- [Animate.css](https://animate.style/)
+- [React-leaflet](https://react-leaflet.js.org/)
+- [React Hook form](https://react-hook-form.com/)
