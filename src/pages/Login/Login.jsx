@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
 
 const Login = () => {
-  const { signInUser } = useAuth();
+  const { signInUser, setLoading } = useAuth();
   const location = useLocation()
   const navigate = useNavigate()
 // console.log(location.state);
@@ -17,11 +17,14 @@ const Login = () => {
   } = useForm();
 
   const onSubmit = (data) => {
+    setLoading(true)
     // console.log(data);
     const {email, password} = data
     signInUser(email, password)
+   
     .then(result =>{
       console.log(result.user);
+      setLoading(false)
       toast.success('Logged in Successfully!!')
       navigate(`${location.state || '/'}`)
     })

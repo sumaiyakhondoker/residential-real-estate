@@ -8,7 +8,7 @@ import { useState } from "react";
 
 const Register = () => {
   const navigate = useNavigate()
-  const {registerUser} = useAuth()
+  const {registerUser, setLoading} = useAuth()
   const [showPassword, setShowPassword] = useState(false)
     
 
@@ -21,13 +21,16 @@ const Register = () => {
   const passwordRegex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
   
   const onSubmit = (data) => {
+    setLoading(true)
     
     const {email, password} = data
     const isValid = passwordRegex.test(password);
     if(isValid){
       registerUser(email, password)
+      
       .then(result =>{
         console.log(result.user);
+        setLoading(false)
         toast.success('You Have Registered Successfully!')
         navigate('/')
   
@@ -35,6 +38,7 @@ const Register = () => {
       .catch(error =>{
          
         toast.error(error.message.slice(9,43));
+         setLoading(false)
       })
     }
     else{

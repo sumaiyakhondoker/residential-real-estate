@@ -1,0 +1,60 @@
+
+[
+      {
+        "id": 1,
+        "feature_name": "Living Room",
+        "description": "A spacious and comfortable living area designed for relaxation and entertainment.",
+        "icon": "https://i.ibb.co.com/Xxmqz7nG/1.png"
+      },
+      {
+        "id": 2,
+        "feature_name": "Swimming Pool",
+        "description": "A private outdoor or indoor swimming pool for recreation and exercise.",
+        "icon": "https://i.ibb.co.com/76sSSDJ/2.png"
+      },
+      {
+        "id": 3,
+        "feature_name": "Modern Kitchen",
+        "description": "A fully equipped kitchen with modern appliances and ample counter space.",
+        "icon": "https://i.ibb.co.com/kg83nG6Z/3.png"
+      },
+      {
+        "id": 4,
+        "feature_name": "Garage",
+        "description": "A secure garage with space for vehicles and storage.",
+        "icon": "https://i.ibb.co.com/yFPXjTZc/4.jpg"
+      },
+      {
+        "id": 5,
+        "feature_name": "Garden",
+        "description": "A landscaped garden area ideal for outdoor activities and relaxation.",
+        "icon": "https://i.ibb.co.com/84dtvCVs/5.png"
+      },
+      {
+        "id": 6,
+        "feature_name": "Gym",
+        "description": "A private or shared fitness center with modern exercise equipment.",
+        "icon": "https://i.ibb.co.com/r2NY0p70/6.png"
+      },
+      {
+        "id": 7,
+        "feature_name": "Rooftop Terrace",
+        "description": "A private rooftop terrace with stunning views, ideal for outdoor gatherings.",
+        "icon": "https://i.ibb.co.com/239q4Z2w/7.png"
+      },
+      {
+        "id": 8,
+        "feature_name": "Study Room",
+        "description": "A quiet and private space for work or study with ample natural light.",
+        "icon": "https://i.ibb.co.com/CpRg6h7X/8.png"
+      },
+      
+      {
+        "id": 9,
+        "feature_name": "High-Speed Internet",
+        "description": "Reliable and fast internet connection suitable for streaming, gaming, and work.",
+        "icon": "https://i.ibb.co.com/5WYQS7XQ/9.jpg"
+      }
+    ]
+  
+  

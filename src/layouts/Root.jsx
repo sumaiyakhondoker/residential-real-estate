@@ -4,10 +4,12 @@ import Footer from "../pages/shared/Footer";
 
 const Root = () => {
   return (
-    <div>
+    <div >
       <Navbar></Navbar>
-
-      <Outlet></Outlet>
+<div className="px-4 lg:p-0">
+<Outlet></Outlet>
+</div>
+      
 
       <Footer></Footer>
     </div>

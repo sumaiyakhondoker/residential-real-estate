@@ -9,7 +9,7 @@ import Properties from "../pages/Properties/Properties";
 import Contact from "../pages/Contact/Contact";
 import PropertyCardDetails from "../pages/Home/PropertyCardDetails";
 import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
-import Map from "../pages/Contact/Map";
+import { estateLoader } from "../pages/Home/loaderFunction/loaderFunction";
 
 export const router = createBrowserRouter([
     {
@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
       {
         path:'/',
         element: <Home></Home>,
-        loader: ()=> fetch('/property_data.json')
+        loader: estateLoader
       },
       {
         path: '/propertyCardDetails/:id',

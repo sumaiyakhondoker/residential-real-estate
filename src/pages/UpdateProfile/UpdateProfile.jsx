@@ -1,16 +1,13 @@
-import { useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useForm } from "react-hook-form";
-
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
-import { getAuth } from "firebase/auth";
-import app from "../../firebase/firebase.config";
+
 
 const UpdateProfile = () => {
 
     const {updateUserProfile, user} = useAuth()
-    const auth = getAuth(app)
+   
     
      const {
         register,
@@ -49,11 +46,20 @@ const UpdateProfile = () => {
         <div className="hero min-h-screen">
         <div className="hero-overlay"></div>
           <div className="hero-content flex-col ">
-            <div className="card bg-base-50   shrink-0 shadow-2xl">
+            {/*  */}
+            <div className="bg-white px-5 py-3">
+              <h3 className="text-xl font-semibold">Name: {user.displayName || 'Nabila'}</h3>
+              <p>Photo URL: {user.photoURL || 'https://i.ibb.co.com/zHCMvNR/a4.jpg'}</p>
+            </div>
+
+
+
+            {/*  */}
+            <div className="card bg-base-50 shrink-0 shadow-2xl">
               <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                 <fieldset className="fieldset">
                   <h1 className="text-3xl font-bold text-white text-center">
-                    Update Your Profile Information
+                  Want To Update Your Profile ?
                   </h1>
 
                   <label className="fieldset-label text-white">
@@ -62,7 +68,7 @@ const UpdateProfile = () => {
                   <input
                     type="text"
                     className="input w-full"
-                    placeholder={user.fullName || ''}
+                    placeholder='Username'
                     {...register("fullName")}
                   />
 
@@ -72,7 +78,7 @@ const UpdateProfile = () => {
                   <input
                     type="text"
                     className="input w-full"
-                    placeholder={user.photoURL}
+                    placeholder='photo URL'
                     {...register("image")}
                   />
 

@@ -6,7 +6,7 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 
 const Footer = () => {
   return (
-    <footer className=" bg-base-200 text-base-content  pt-5 md:pt-10 pb-10 lg:pb-20 relative ">
+    <footer className=" bg-base-200 text-base-content pr-2 md:pr-0 pl-5 lg:pl-0  pt-5 md:pt-10 pb-10 lg:pb-20 relative ">
       <div className="max-w-7xl mx-auto footer sm:footer-horizontal">
         <aside>
           <h3 className=" text-2xl text-accent font-semibold flex items-center">
@@ -47,7 +47,7 @@ const Footer = () => {
           </form>
 
           {/*  */}
-          <div className="grid grid-flow-col gap-4 mt-5 text-2xl">
+          <div className="grid grid-flow-col gap-4 mt-5 mb-5 md:mb-3 text-2xl">
             <a href="#">
               <FaTwitter></FaTwitter>
             </a>
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className=" absolute bottom-5  lg:left-[570px] ">
+        <p className="absolute  bottom-2  lg:bottom-5 md:left-46  lg:left-[570px] ">
           Copyright © {new Date().getFullYear()} - All right reserved by
           GrandVista Homes
         </p>
