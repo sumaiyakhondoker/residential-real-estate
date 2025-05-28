@@ -24,7 +24,12 @@ const UpdateProfile = () => {
   updateUserProfile(fullName, image)
     
   .then(() => {
-              toast.success('Profile Updated Successfully!')
+              if(fullName && image){
+                toast.success('Profile Updated Successfully!')
+              }
+              else{
+                toast.error('Please update your username and photo URL')
+              }
             })
   .catch((error) => {
               toast.error(error);
@@ -47,10 +52,7 @@ const UpdateProfile = () => {
         <div className="hero-overlay"></div>
           <div className="hero-content flex-col ">
             {/*  */}
-            <div className="bg-white px-5 py-3">
-              <h3 className="text-xl font-semibold">Name: {user.displayName || 'Nabila'}</h3>
-              <p>Photo URL: {user.photoURL || 'https://i.ibb.co.com/zHCMvNR/a4.jpg'}</p>
-            </div>
+            
 
 
 
