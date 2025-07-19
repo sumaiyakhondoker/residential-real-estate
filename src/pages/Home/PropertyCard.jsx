@@ -27,7 +27,7 @@ const PropertyCard = ({data}) => {
     </h2>
     
     <p className="text-gray-500 flex items-center"><CiLocationOn className="text-lg mr-1"></CiLocationOn> {location}</p>
-    <h3 className="text-2xl font-semibold text-accent">{price}</h3>
+    <h3 className="text-xl md:text-2xl font-semibold text-accent">{price}</h3>
     <p>{area}</p>
     <div className="card-actions justify-end">
     <Link to={`/propertyCardDetails/${id}`}><button className="btn bg-accent text-white">View Property</button></Link>

@@ -38,13 +38,13 @@ const Login = () => {
       <Helmet>
         <title>Login | GrandVista Homes</title>
       </Helmet>
-      <div className="bg-[url('/loginBackground.svg')] bg-cover min-h-screen bg-no-repeat">
-        <div className="hero min-h-screen">
-          <div className="hero-content flex-col ">
-            <div className="card bg-base-50   w-[400px]  shrink-0 shadow-2xl">
+      <div className="bg-[url('/loginBackground.svg')] bg-cover md:min-h-screen bg-no-repeat">
+        <div className="hero md:min-h-screen">
+          <div className="hero-content flex-col">
+            <div className="card bg-base-50 w-[300px] md:w-[400px]  shrink-0 shadow-2xl">
               <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                 <fieldset className="fieldset">
-                  <h1 className="text-3xl font-bold text-blue-900 text-center">
+                  <h1 className="text-2xl md:text-3xl font-bold text-blue-900 text-center">
                     Login
                   </h1>
 
@@ -75,10 +75,10 @@ const Login = () => {
                 </fieldset>
               </form>
               <div className="divider divider-info text-sky-300 px-5">
-                <span className="  ">Continue with</span>
+                <span className="text-sm md:text-xl">Continue with</span>
               </div>
               <SocialLogin></SocialLogin>
-              <p className="text-sky-300  text-center pb-5">
+              <p className="text-sm md:text-xl text-sky-300 text-center pb-5">
                 Need An Account?{" "}
                 <Link to="/register" className="link">
                   REGISTER

@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className=" bg-base-200 text-base-content pr-2 md:pr-0 pl-5 lg:pl-0  pt-5 md:pt-10 pb-10 lg:pb-20 relative ">
       <div className="max-w-7xl mx-auto footer sm:footer-horizontal">
         <aside>
-          <h3 className=" text-2xl text-accent font-semibold flex items-center">
+          <h3 className="text-xl md:text-2xl text-accent font-semibold flex items-center">
             <HiOutlineBuildingOffice2></HiOutlineBuildingOffice2>
             <span className="font-extrabold mx-1">GrandVista</span> Homes
           </h3>
