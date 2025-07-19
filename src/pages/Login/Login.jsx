@@ -75,10 +75,10 @@ const Login = () => {
                 </fieldset>
               </form>
               <div className="divider divider-info text-sky-300 px-5">
-                <span className="text-sm md:text-xl">Continue with</span>
+                <span className="text-sm md:text-base">Continue with</span>
               </div>
               <SocialLogin></SocialLogin>
-              <p className="text-sm md:text-xl text-sky-300 text-center pb-5">
+              <p className="text-sm md:text-base text-sky-300 text-center pb-5">
                 Need An Account?{" "}
                 <Link to="/register" className="link">
                   REGISTER
