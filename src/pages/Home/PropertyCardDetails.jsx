@@ -80,10 +80,10 @@ const PropertyCardDetails = () => {
           </figure>
           </div>
 
-          <div className="text-center my-auto right-0">
+          <div className="text-left md:text-center md:my-auto md:right-0">
             <p>{area}</p>
           </div>
-          <div className="text-center col-span-2 my-auto flex justify-center items-center gap-5 right-0">
+          <div className="text-center col-span-2 my-auto flex justify-end md:justify-center items-center gap-5 right-0">
             <button onClick={()=> toast.success('Added to wishlist')} className="btn btn-accent text-white text-xl px-2.5"><RiHeartAdd2Line></RiHeartAdd2Line></button>
             <h3 className="text-2xl font-semibold ">{price}</h3>
           </div>

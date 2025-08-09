@@ -2,6 +2,7 @@ import { HiOutlineBuildingOffice2 } from "react-icons/hi2";
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from "../../hooks/useAuth";
 import userImg from '/user.png'
+import toast from "react-hot-toast";
 
 const Navbar = () => {
   const {user, logOut} = useAuth()
@@ -25,9 +26,12 @@ const Navbar = () => {
       logOut()
       .then(()=>{
         console.log('user logged out');
+        toast.success('User logged out successfully!')
       })
       .catch(error =>{
         console.log(error);
+        toast.error(error)
+        
       })
     }
     return (
@@ -44,7 +48,7 @@ const Navbar = () => {
         {navlinks}
       </ul>
     </div>
-    <Link to='/' className="btn btn-ghost text-xl lg:text-2xl text-accent font-semibold uppercase"><HiOutlineBuildingOffice2></HiOutlineBuildingOffice2><span className="font-extrabold">GrandVista</span> Homes</Link>
+    <Link to='/' className="flex justify-center items-center p-0 text-lg lg:text-2xl text-accent font-semibold uppercase"><HiOutlineBuildingOffice2></HiOutlineBuildingOffice2><span className="font-extrabold ml-2">GrandVista</span> Homes</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -70,7 +74,7 @@ const Navbar = () => {
 
 <div className="tooltip tooltip-bottom" data-tip={user.displayName || user.email || 'User'}>
 <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-        <div className="w-10 rounded-full">
+        <div className="w-8 md:w-10  rounded-full">
           <img
             alt="User Image"
             src={`${user.photoURL || userImg}`} />
@@ -79,7 +83,7 @@ const Navbar = () => {
 </div>
 
 
-      <button onClick={handleLogout} className="btn ml-3">Logout</button>
+      <button onClick={handleLogout} className="btn ml-1 md:ml-3">Logout</button>
     </div> 
     :
     <>
